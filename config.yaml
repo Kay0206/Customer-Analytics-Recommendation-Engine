@@ -1,0 +1,18 @@
+data:
+  customers_csv: ./data/Customers.csv
+  products_csv:  ./data/Products.csv
+  purchases_csv: ./data/Purchases.csv
+  browsing_csv:  ./data/Browsing.csv
+output:
+  purchases_per_segment: ./output/purchasesPerSegment.parquet
+  top10_products: ./output/top10PurchasedProducts.parquet
+  top10_per_category: ./output/top10PurchasedProductsPerCategory.parquet
+  trending_products: ./output/trendingProducts.parquet
+  revenue_per_customer: ./output/totalRevenuePerCustomer.parquet
+  top5perc_clv: ./output/top5PercentCLVCustomers.parquet
+  rec_freq_together: ./output/recommendationFrequentlyPurchasedTogether.parquet
+  rec_browsing: ./output/recommendationBrowsingHistory.parquet
+params:
+  trending_days: 7
+  top_n_per_category: 10
+  top_k_pairs: 5
